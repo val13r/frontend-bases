@@ -26,6 +26,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background-color: var(--background-color);
+  box-sizing: border-box;
 }
 
 a {
@@ -42,6 +43,22 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-family);
   color: var(--secondary-color);
+}
+
+input, textarea {
+  font-family: var(--font-family);
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+input:focus, textarea:focus {
+  border-color: #007bff;
+  outline: none;
 }
 
 button {
